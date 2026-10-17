@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100e">
+  <meta name="description" content="ORIÓN DESIGN: ropa femenina de fabricación venezolana. Explora el catálogo y solicita tu pedido o cotización por WhatsApp.">
+  <title>ORIÓN DESIGN — Moda femenina hecha en Venezuela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="topline"><span>Diseños originales, hechos en Venezuela</span><span>Envíos nacionales <i>✦</i></span></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="ORIÓN DESIGN, inicio"><img src="assets/orion-design-transparent.png" alt="Logotipo original de ORIÓN DESIGN"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#colecciones">Colecciones</a><a href="#catalogo">Catálogo</a><a href="#nosotros">Nuestra historia</a><a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart-trigger" id="cartOpen" aria-label="Abrir carrito"><span class="bag-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8.5h14l1 12H4l1-12Z" stroke="currentColor" stroke-width="1.55" stroke-linejoin="round"/><path d="M9 9V6.2a3 3 0 0 1 6 0V9" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"/></svg></span><span>Mi bolsa</span><b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> ESTILO QUE SE SIENTE TUYO</div>
+        <h1>Hecha para<br>sentirte <em>única.</em></h1>
+        <p>Ropa femenina con diseño propio, calidad que se nota y ese detalle que transforma cómo te sientes.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#catalogo">Explorar catálogo <span>↗</span></a><a class="text-link" href="#nosotros">Conoce nuestra historia <span>→</span></a></div>
+        <div class="hero-proof"><div class="proof-mark">7<span>+</span></div><div><strong>Años creando en Venezuela</strong><small>Fabricantes y distribuidores</small></div><div class="proof-divider"></div><div class="proof-mark">✦</div><div><strong>Envíos nacionales</strong><small>Donde estés, llegamos</small></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Identidad de ORIÓN DESIGN">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-art-logo"><img src="assets/orion-design-transparent.png" alt="Logotipo original de ORIÓN DESIGN"></div>
+        <div class="hero-note"><span>01 / 03</span><span>MODA CON IDENTIDAD</span></div>
+        <div class="hero-seal">DISEÑADO<br>EN VENEZUELA<br><b>✦</b></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Características de la marca"><div>DISEÑOS ORIGINALES <b>✦</b> ACABADOS IMPECABLES <b>✦</b> TELAS CÓMODAS <b>✦</b> ENVÍOS A TODA VENEZUELA <b>✦</b> DISEÑOS ORIGINALES <b>✦</b></div></div>
+
+    <section class="section collections" id="colecciones">
+      <div class="section-heading"><div><div class="eyebrow"><span></span> DESCUBRE TU ESTILO</div><h2>Encuentra tu <em>favorita.</em></h2></div><a class="text-link" href="#catalogo">Ver catálogo <span>→</span></a></div>
+      <div class="category-grid">
+        <button class="category-card category-body" data-category="Bodys"><span class="category-number">01</span><span class="category-copy"><small>ESTILO ESENCIAL</small><strong>Bodys</strong><i>Explorar categoría →</i></span></button>
+        <button class="category-card category-set" data-category="Conjuntos"><span class="category-number">02</span><span class="category-copy"><small>LOOK COMPLETO</small><strong>Conjuntos</strong><i>Explorar categoría →</i></span></button>
+        <button class="category-card category-shirt" data-category="Camisas"><span class="category-number">03</span><span class="category-copy"><small>VERSATILIDAD DIARIA</small><strong>Camisas</strong><i>Explorar categoría →</i></span></button>
+      </div>
+      <p class="source-note">Categorías basadas en las referencias compartidas. La disponibilidad depende del catálogo vigente.</p>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section catalog-inner">
+        <div class="section-heading catalog-heading"><div><div class="eyebrow"><span></span> PIEZAS PARA TI</div><h2>Catálogo <em>ORIÓN.</em></h2><p class="section-intro">Descubre los diseños disponibles y arma tu próximo look.</p></div><button class="button button-outline wholesale-open" id="wholesaleTop">Solicitar cotización mayorista <span>↗</span></button></div>
+        <div class="catalog-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar una prenda…" aria-label="Buscar productos"></label><div class="filters"><select id="categoryFilter" aria-label="Filtrar por categoría"><option value="">Todas las categorías</option><option>Bodys</option><option>Conjuntos</option><option>Camisas</option><option>Otros</option></select><select id="collectionFilter" aria-label="Filtrar por colección"><option value="">Todas las colecciones</option></select><select id="sortFilter" aria-label="Ordenar catálogo"><option value="featured">Destacados primero</option><option value="price-up">Precio: menor a mayor</option><option value="price-down">Precio: mayor a menor</option><option value="name">Nombre A–Z</option></select></div></div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="no-products" id="emptyCatalog"><div class="empty-spark">✳</div><div class="eyebrow"><span></span> PRÓXIMAMENTE</div><h3>Estamos preparando<br>el catálogo.</h3><p>Muy pronto podrás explorar las piezas disponibles. Escríbenos para conocer las novedades.</p><a class="button button-dark" href="https://wa.me/584225690008?text=Hola%2C%20ORIÓN%20DESIGN.%20Quiero%20conocer%20las%20prendas%20disponibles." target="_blank" rel="noopener">Consultar por WhatsApp <span>↗</span></a><a class="admin-hint" href="admin.html">¿Administras la tienda? Carga productos aquí</a></div>
+        <p class="catalog-count" id="catalogCount"></p>
+      </div>
+    </section>
+
+    <section class="benefits section" aria-label="Ventajas de ORIÓN DESIGN">
+      <div class="benefit-intro"><div class="eyebrow"><span></span> HECHO CON INTENCIÓN</div><h2>Se nota en<br>cada <em>detalle.</em></h2><p>Diseñamos y fabricamos pensando en cómo quieres sentirte: cómoda, segura y fiel a tu estilo.</p></div>
+      <div class="benefit-list"><article><span class="benefit-index">01</span><div><h3>Diseño propio</h3><p>Somos fabricantes y distribuidores de nuestros diseños originales.</p></div><span class="benefit-icon">✳</span></article><article><span class="benefit-index">02</span><div><h3>Calidad que acompaña</h3><p>Prendas con telas cómodas y acabados cuidados.</p></div><span class="benefit-icon">✳</span></article><article><span class="benefit-index">03</span><div><h3>Para crecer juntas</h3><p>Atención al detal, al mayor y al gran mayor.</p></div><span class="benefit-icon">✳</span></article><article><span class="benefit-index">04</span><div><h3>Envíos nacionales</h3><p>Llevamos tus pedidos a cualquier parte de Venezuela.</p></div><span class="benefit-icon">✳</span></article></div>
+    </section>
+
+    <section class="story" id="nosotros"><div class="story-image"><div class="story-logo"><img src="assets/orion-design-transparent.png" alt="Logotipo original de ORIÓN DESIGN"></div><span>VENEZUELA · DESDE HACE MÁS DE 7 AÑOS</span></div><div class="story-copy"><div class="eyebrow"><span></span> UNA HISTORIA HECHA A MANO</div><h2>Creemos en la ropa que te hace <em>brillar.</em></h2><p>ORIÓN DESIGN nació con una idea sencilla: crear prendas femeninas con diseño propio, buenos materiales y acabados impecables. Hoy seguimos creciendo junto a cada mujer que elige vestir con personalidad.</p><p>Somos una marca venezolana con más de siete años de trayectoria, comprometida con la calidad y con llevar nuestras colecciones a todo el país.</p><div class="story-signature">Con cariño, <strong>el equipo ORIÓN <span>✦</span></strong></div></div></section>
+
+    <section class="wholesale-banner"><div><div class="eyebrow eyebrow-light"><span></span> PARA TIENDA Y EMPRENDIMIENTO</div><h2>Crezcamos <em>juntas.</em></h2><p>¿Buscas surtir tu tienda? Cuéntanos qué prendas te interesan y te preparamos una cotización mayorista personalizada.</p></div><div class="wholesale-actions"><button class="button button-gold" id="wholesaleBanner">Solicitar cotización mayorista <span>↗</span></button><button class="button button-gran-mayor" id="wholesaleGrand">Solicitar cotización al gran mayor <span>↗</span></button></div><div class="banner-star">✳</div></section>
+  </main>
+
+  <footer id="contacto"><div class="footer-main"><div class="footer-brand"><img src="assets/orion-design-transparent.png" alt="Logotipo original de ORIÓN DESIGN"><p>Diseño femenino con identidad venezolana.</p></div><div class="footer-links"><div><small>EXPLORA</small><a href="#colecciones">Colecciones</a><a href="#catalogo">Catálogo</a><a href="#nosotros">Nuestra historia</a></div><div><small>CONTACTO</small><a href="https://wa.me/584225690008" target="_blank" rel="noopener noreferrer">WhatsApp · Detal y mayor · +58 422-5690008</a><a href="https://wa.me/584146529219" target="_blank" rel="noopener noreferrer">WhatsApp · Gran mayor · +58 414-6529219</a><a href="https://maps.app.goo.gl/pHwCPSM1QSSroYHQ6" target="_blank" rel="noopener noreferrer">Ver ubicación</a><a href="https://whatsapp.com/channel/0029Vb7sPJT3mFYDoES0ik2A" target="_blank" rel="noopener noreferrer">Canal de WhatsApp</a><a href="https://www.instagram.com/oriondesign.ve" target="_blank" rel="noopener noreferrer">Instagram · @oriondesign.ve</a><a href="https://www.tiktok.com/@orion.design.ve?_r=1" target="_blank" rel="noopener noreferrer">TikTok · @orion.design.ve</a><span>Envíos a toda Venezuela</span></div></div></div><div class="footer-bottom"><span>© <span id="yearNow"></span> ORIÓN DESIGN · Hecho con intención en Venezuela</span></div></footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true"><div class="drawer-head"><div><small>TU SELECCIÓN</small><h2>Mi bolsa <span id="drawerCount">(0)</span></h2></div><button class="icon-button" id="cartClose" aria-label="Cerrar carrito">×</button></div><div class="cart-lines" id="cartLines"></div><div class="cart-empty" id="cartEmpty"><span class="cart-empty-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 8.5h14l1 12H4l1-12Z" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round"/><path d="M9 9V6.2a3 3 0 0 1 6 0V9" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/></svg></span><p>Tu bolsa está esperando<br>por algo especial.</p><button class="text-link" id="continueShopping">Volver al catálogo →</button></div><div class="cart-footer" id="cartFooter"><div class="cart-total"><span>Subtotal</span><strong id="cartTotal">$0</strong></div><small>El envío se coordina por WhatsApp.</small><button class="button button-dark full-button" id="checkoutOpen">Continuar pedido <span>↗</span></button><button class="wholesale-link" id="wholesaleCart">Solicitar cotización mayorista</button></div></aside>
+
+  <div class="modal-backdrop" id="modalBackdrop"><section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="icon-button modal-close" id="modalClose" aria-label="Cerrar">×</button><div id="modalContent"></div></section></div>
+  <div class="modal-backdrop" id="checkoutBackdrop"><section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><button class="icon-button modal-close" id="checkoutClose" aria-label="Cerrar">×</button><div class="eyebrow"><span></span> YA CASI ES TUYO</div><h2 id="checkoutTitle">Completa tu <em>pedido.</em></h2><p>Déjanos tus datos para preparar el mensaje de WhatsApp.</p><form id="checkoutForm"><label>Nombre y apellido<input required name="name" autocomplete="name" placeholder="Tu nombre"></label><div class="form-row"><label>Teléfono<input required name="phone" type="tel" autocomplete="tel" placeholder="0412-000-0000"></label><label>Ciudad / estado<input required name="city" autocomplete="address-level2" placeholder="Caracas, Distrito Capital"></label></div><label>Nota para tu pedido <span class="optional">(opcional)</span><textarea name="note" rows="3" placeholder="Color, referencia de entrega u otra consulta"></textarea></label><button class="button button-dark full-button" type="submit">Enviar pedido por WhatsApp <span>↗</span></button></form><small class="form-privacy">La solicitud se enviará a ORIÓN DESIGN para confirmar disponibilidad y coordinar el envío.</small></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
